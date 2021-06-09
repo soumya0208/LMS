@@ -1,0 +1,44 @@
+{% load static%}
+<head>
+ 
+</head>
+
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="{%static 'style_login1.css'%}">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+	<div class="container">
+		<div class="img">
+			<img src="{%static 'bg.svg'%}">
+		</div>
+		<div class="login-content">
+			<form action="c5" method="post">
+				<img src="{%static 'avatar.svg'%}">
+				<h2 class="title">Welcome</h2>
+           		<div class="input-div one">
+				{% csrf_token %}
+           		   <div class="i">
+           		   		<i class="fas fa-user"></i>
+           		   </div>
+           		   <div class="div">
+           		   		<h5>Username</h5>
+           		   		<input type="text" class="input" name="u_name" required="">
+           		   </div>
+           		</div>
+				{% for message in messages %}
+				<p id="message">{{message}}</p>
+				{% endfor %}
+				<a href="c3">Create your own course here</a>
+            	<input type="submit" class="btn" name="submit" value="submit">
+            </form>
+            </form>
+        </div>
+    </div>
+    <script type="text/javascript" src="{%static 'main_login.js'%}"></script>
+</body>
+</html>

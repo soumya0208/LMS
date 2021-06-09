@@ -1,0 +1,28 @@
+<html>
+<body>
+<table style="width:100%">
+  <tr>
+  <th>teacher  user name</th>
+    <th>course code</th>
+	<th>Minimum reaquirement</th>
+	<th>video</th>
+  </tr>
+{%for i in q %}
+<tr>
+<th>
+{{i.u_name}}
+</th>
+<th>
+{{i.coursecode}}
+</th>
+<th>
+{{i.caption}}
+</th><th>
+<video width="500" height="500" controls >
+<source src="{{q.video.url}}" type="video/mp4">
+</video</th>
+</tr>
+{% endfor %}
+</table>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<html>
+<body>
+<table style="width:100%">
+  <tr>
+  <th>teacher name</th>
+    <th>teacher user name</th>
+    <th>email</th>
+	<th>course name</th>
+	<th>subject</th>
+    <th>course code</th>
+	<th>Minimum reaquirement</th>
+  </tr>
+{%for i in q %}
+<tr>
+<th>
+{{i.name}}
+</th>
+<th>
+{{i.u_name}}
+</th>
+<th>
+{{i.email}}
+</th>
+<th>
+{{i.coursename}}
+</th>
+<th>
+{{i.subject}}
+</th>
+<th>
+{{i.coursecode}}
+</th>
+<th>
+{{i.minq}}
+</th>
+</tr>
+{% endfor %}
+</table>
+</body>
+</html>

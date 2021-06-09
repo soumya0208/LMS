@@ -1,0 +1,36 @@
+<html>
+<body>
+<table style="width:100%">
+  <tr>
+  <th>teacher user name </th>
+    <th>student user name</th>
+    <th>student email</th>
+	<th>caption</th>
+    <th>course code</th>
+	<th>post</th>
+  </tr>
+{%for i in q %}
+<tr>
+<th>
+{{i.tu_name}}
+</th>
+<th>
+{{i.su_name}}
+</th>
+<th>
+{{i.email}}
+</th>
+<th>
+{{i.caption}}
+</th>
+<th>
+{{i.coursecode}}
+</th>
+<th>
+{{i.post}}
+</th>
+</tr>
+{% endfor %}
+</table>
+</body>
+</html>

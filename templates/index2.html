@@ -1,0 +1,325 @@
+{% load static%}
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    
+
+    <title>FIVE'S' School </title>
+    
+    <!-- Bootstrap core CSS -->
+    <link href="{%static 'bootstrap.min.css' %}" rel="stylesheet">
+
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" href="{%static 'fontawesome.css' %}">
+    <link rel="stylesheet" href="{%static 'templatemo-grad-school.css' %}">
+    <link rel="stylesheet" href="a{%static 'owl.css' %}">
+    <link rel="stylesheet" href="{%static 'lightbox.css' %}">
+
+
+  </head>
+
+<body>
+
+   
+  <!--header-->
+  <header class="main-header clearfix" role="header">
+    <div class="logo">
+      <a href="#"><em>Five'S'</em> School</a>
+    </div>
+    <a href="#menu" class="menu-link"><i class="fa fa-bars"></i></a>
+    <nav id="menu" class="main-nav" role="navigation">
+      <ul class="main-menu">
+        <li><a href="index2">Home</a></li>
+        <li class="has-submenu"><a href="#section2">About Us</a>
+          <ul class="sub-menu">
+            <li><a href="#section2">Who we are?</a></li>
+            <li><a href="#section3">What we do?</a></li>
+            <li><a href="#section3">How it works?</a></li>
+   
+          </ul>
+		  <li class="has-submenu"><a href="#">profile</a>
+          <ul class="sub-menu">
+           <li class=""><a href="c3">create new course</a>
+		</li>
+		<li><a href="c4"> your created course</a>
+		</li>
+		<li class=""><a href="c7">personal information</a>
+		</li>
+		<li><a href="log">logout</a>
+		</li>
+          </ul>
+        </li>
+        <li><a href="#section5">Video</a></li> 
+        <li><a href="#section6">Contact</a></li>
+		<li><a href="#section2">Discover more</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- ***** Main Banner Area Start ***** -->
+  <section class="section main-banner" id="top" data-section="section1">
+      <video autoplay muted loop id="bg-video">
+          <source src="{% static 'assets/images/course-video.mp4'%}" type="video/mp4" />
+      </video>
+
+      <div class="video-overlay header-text">
+          <div class="caption">
+              <h6>Graduate School of Management</h6>
+              <h2><em>welcome teacher to your</em> Classroom</h2>
+              <div class="main-button">
+                  <div class=""><a href="c4"> your created courselist </a></div>
+
+              </div>
+          </div>
+      </div>
+  </section>
+  <!-- ***** Main Banner Area End ***** -->
+
+
+ 
+
+  <section class="features">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4 col-12">
+          <div class="features-post">
+            <div class="features-content">
+              <div class="content-show">
+                <h4><i class="fa fa-pencil"></i>Motive</h4>
+              </div>
+              <div class="content-hide">
+                <p>So basically we are here trying to resolve the problem of several universities and students are facing due to the pandamic of covid-19 all over the world.students are far enough in their houses and could not come to universities. </p>
+                <p class="hidden-sm">due to that their studies as well as the curriculams got harmed. we want to provide a easy solution where they can communicate with each other through the help of videoes..</p>
+                <div class="scroll-to-section"><a href="#section2">More Info.</a></div>
+            </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-12">
+          <div class="features-post second-features">
+            <div class="features-content">
+              <div class="content-show">
+                <h4><i class="fa fa-graduation-cap"></i>Virtual Class</h4>
+              </div>
+              <div class="content-hide">
+                <p>Every week we uploads two videos on each topic. These lectures are only available for the registered students. Every individual student gets a unique site permitted password through which they can access the videos and study material.  </p>
+                <p class="hidden-sm">. No one is allowed to redistribute the passwords or the study materials to anyone else. They are strictly available for personal use.</p>
+                <div class="scroll-to-section"><a href="#section3">Details</a></div>
+            </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-12">
+          <div class="features-post third-features">
+            <div class="features-content">
+              <div class="content-show">
+                <h4><i class="fa fa-book"></i>Doubt clearing</h4>
+              </div>
+              <div class="content-hide">
+                <p> Basically our site provides previously recorded videos so that the students can access the videos and watch them in anytime of the day</p>
+                <p class="hidden-sm">A student can  develop confusions going through the topics so we have arranged live session on every Saturday evening to clear the doubts of that particular week.</p>
+                <div class="scroll-to-section"><a href="#section4">Read More</a></div>
+            </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section why-us" id="section2">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="section-heading">
+            <h2>Why choose Five'S' School?</h2>
+          </div>
+        </div>
+        <div class="col-md-12">
+          <div id='tabs'>
+            <ul>
+              <li><a href='#tabs-1'>Best Education</a></li>
+              <li><a href='#tabs-2'>Top Management</a></li>
+              <li><a href='#tabs-3'>Quality Meeting</a></li>
+            </ul>
+            <section class='tabs-content'>
+              <article id='tabs-1'>
+                <div class="row">
+                  <div class="col-md-6">
+                    <img src="{% static 'assets/images/choose-us-image-01.png'%} " alt="">
+                  </div>
+                  <div class="col-md-6">
+                    <h4>Best Education</h4>
+                    <p> Our courses are easily accessible to the students. They will just have to register and then choose the course that they want to get taught about.</p><p> They can watch the videos in their free time as all the videos are pre-recorded. For weekly doubts we have special live meetings.</p>
+                  </div>
+                </div>
+              </article>
+              <article id='tabs-2'>
+                <div class="row">
+                  <div class="col-md-6">
+                    <img src="{%static 'assets/images/choose-us-image-02.png'%}" alt="">
+                  </div>
+                  <div class="col-md-6">
+                    <h4>Top Level</h4>
+                    <p>We are connected to renowned well-educated higher level degree holder professors who provides the best education through colourful, much thoroughly explained videos. Our study materials are short,simple and to the point and therefore, they are easy to undertand and remember.</p> 
+                    <p>Our study materials are short,simple and to the point and therefore, they are easy to undertand and remember..</p>
+                  </div>
+                </div>
+              </article>
+              <article id='tabs-3'>
+                <div class="row">
+                  <div class="col-md-6">
+                    <img src="{% static 'assets/images/choose-us-image-03.png'%}" alt="">
+                  </div>
+                  <div class="col-md-6">
+                    <h4>Quality Meeting</h4>
+                    <p>The enhanced quality of the audio and video is only possible due to the amount of dedication our members put into it. We thoroughly create each and every digital asset which are then quality tested by our experts. Only the best end-user product is offered to our passionate students.</p>
+                  </div>
+                </div>
+              </article>
+            </section>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+	
+  <section class="section coming-soon" id="section3" >
+    <div class="container">
+      <div class="row">
+        <div class="col-md-7 col-xs-12">
+          <div class="continer centerIt">
+		  <center>
+            <div>
+              <h4>Take <em>any online course</em> and win $326 for your next class</h4>
+              <div class="counter">
+
+                <div class="days">
+                  <div class="value">00</div>
+                  <span>Days</span>
+                </div>
+
+                <div class="hours">
+                  <div class="value">00</div>
+                  <span>Hours</span>
+                </div>
+
+                <div class="minutes">
+                  <div class="value">00</div>
+                  <span>Minutes</span>
+                </div>
+
+                <div class="seconds">
+                  <div class="value">00</div>
+                  <span>Seconds</span>
+                </div>
+				</center>
+              </div>
+            </div>
+          </div>
+        </div>
+  </section>
+  <section class="section video" id="section5">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 align-self-center">
+          <div class="left-content">
+            <span>our presentation is for you</span>
+            <h4>Watch the video to learn more <em>about FIVE"S" School</em></h4>
+            <p>Five'S' School is a online educational platform which provides the best education at your fingertips. We provide efficient and effective digital classes that makes learning stressfree and fun.The interactive classes helps an individual to learn at a greater pace
+            <br><br>Our techniques are one of the finest which makes learning a joyful activity instead of a daily chore.We will help you pursue your dreams in a less tedious way. So come join with us in our movement to make learning a fun activity. We are offering online lectures on all science subjects and engineering degrees. 
+The main purpose behind building such a website is we became much worried of how the students will get easy accessible lectures and notes in this Lockdown Period.
+</p>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <article class="video-item">
+            <div class="video-caption">
+              <h4>About us</h4>
+            </div>
+            <figure>
+              <a href="https://youtu.be/gH_gyL9ik1Q" class="play"><img src="{%static 'assets/images/main-thumb.png'%}"></a>
+            </figure>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section contact" id="section6">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="section-heading">
+            <h2>Let’s Keep In Touch</h2>
+          </div>
+        </div>
+        <div class="col-md-6">
+        
+  
+          <form id="contact" action="" method="post">
+            <div class="row">
+              <div class="col-md-6">
+                  <fieldset>
+                    <input name="name" type="text" class="form-control" id="name" placeholder="Your Name" required="">
+                  </fieldset>
+                </div>
+                <div class="col-md-6">
+                  <fieldset>
+                    <input name="email" type="text" class="form-control" id="email" placeholder="Your Email" required="">
+                  </fieldset>
+                </div>
+              <div class="col-md-12">
+                <fieldset>
+                  <textarea name="message" rows="6" class="form-control" id="message" placeholder="Your message..." required=""></textarea>
+                </fieldset>
+              </div>
+              <div class="col-md-12">
+                <fieldset>
+                  <button type="submit" id="form-submit" class="button">Send Message Now</button>
+                </fieldset>
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="col-md-6">
+          <div id="map">
+            <iframe src="https://maps.google.com/maps?q=Av.+L%C3%BAcio+Costa,+Rio+de+Janeiro+-+RJ,+Brazil&t=&z=13&ie=UTF8&iwloc=&output=embed" width="100%" height="422px" frameborder="0" style="border:0" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <p><i class="fa fa-copyright"></i> Copyright 2020 by FIVE'S' School  
+          
+           | Design:</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- Scripts -->
+  <!-- Bootstrap core JavaScript -->
+    <script src="{ % static 'vendor/jquery/jquery.min.js'%}"></script>
+    <script src="{% static 'vendor/bootstrap/js/bootstrap.bundle.min.js'%}"></script>
+
+    <script src="{% static 'assets/js/isotope.min.js'%}"></script>
+    <script src="{% static 'assets/js/owl-carousel.js'%}"></script>
+    <script src="{% static 'assets/js/lightbox.js'%}"></script>
+    <script src="{% static 'assets/js/tabs.js'%}"></script>
+    <script src="{% static 'assets/js/video.js'%}"></script>
+    <script src="{% static 'assets/js/slick-slider.js'%}"></script>
+    <script src="{% static 'assets/js/custom.js'%}"></script>
+    
+</body>
+</html>

@@ -1,0 +1,94 @@
+{% load static%}
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="{% static 'style_login1.css'%} ">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Favicon -->
+</head>
+<body>
+	<img class="wave" src="{%static 'wave.png'%}">
+	<div class="container">
+		<div class="img">
+			<img src="{%static 'bg.svg'%}">
+		</div>
+		<div class="login-content">
+      
+			<form action="c2" method="post">
+			
+				<img src="{%static 'avatar.svg'%}">
+				<h2 class="title">Welcome</h2>
+				{% csrf_token %}
+           		<div class="input-div one">
+           		   <div class="i">
+           		   		<i class="fas fa-user"></i>
+           		   </div>
+           		   <div class="div">
+           		   		<h5>Username</h5>
+           		   		<input type="text" class="input" name="u_name" required="">
+           		   </div>
+           		</div>
+             <div class="input-div one">
+                 <div class="i">
+                    <i class="fas fa-envelope"></i>
+                 </div>
+                 <div class="div" data-validate = "Valid email is required: ex@abc.xyz">
+                    <h5>Email</h5>
+                    <input type="email" class="input" name="email" required="">
+                 </div>
+              </div>
+
+              <div class="input-div one">
+                 <div class="i">
+                    <i class="fas fa-user"></i>
+                 </div>
+                 <div class="div">
+                    <h5>Name</h5>
+                    <input type="text" class="input" name="name" required="">
+                 </div>
+              </div>
+              <div class="input-div one" >
+                 <div class="i">
+                    <i class="fas fa-user"></i>
+                 </div>
+                 <div class="div" >
+                    <h5>coursename</h5>
+                    <input type="text" class="input" name="coursename" required="">
+                 </div>
+              </div>
+				<div class="input-div one">
+                 <div class="i">
+                    <i class="fas fa-user"></i>
+                 </div>
+                 <div class="div">
+                    <h5>coursecode</h5>
+                    <input type="text" class="input" name="coursecode" required="">
+                 </div>
+              </div>
+			  <div class="input-div one">
+                 <div class="i">
+                    <i class="fas fa-user"></i>
+                 </div>
+                 <div class="div" >
+                    <h5>subject</h5>
+                    <input type="text" class="input" name="subject" required="">
+                 </div>
+              </div>
+			  <div class="input-div one">
+                 <div class="i">
+                    <i class="fas fa-user"></i>
+                 </div>
+                 <div class="div" >
+                    <h5>minimum required qualification</h5>
+                    <input type="text" class="input" name="minq" required="">
+                 </div>
+              </div>
+
+            	<input type="submit" class="btn" name="register" value="Register">
+            </form>
+        </div>
+    </div>
+    <script type="text/javascript" src="{% static 'main_login.js'%}"></script>   
+</body>
+</html>

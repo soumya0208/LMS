@@ -1,0 +1,32 @@
+<html>
+<body>
+<table style="width:100%">
+  <tr>
+  <th>teacher name on whoose course registered</th>
+    <th>student user name</th>
+    <th>student email</th>
+	<th>student name</th>
+    <th>course code for he or she registered</th>
+  </tr>
+{%for i in q %}
+<tr>
+<th>
+{{i.tu_name}}
+</th>
+<th>
+{{i.su_name}}
+</th>
+<th>
+{{i.email}}
+</th>
+<th>
+{{i.name}}
+</th>
+<th>
+{{i.coursecode}}
+</th>
+</tr>
+{% endfor %}
+</table>
+</body>
+</html>

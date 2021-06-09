@@ -1,0 +1,36 @@
+<html>
+<body>
+<table style="width:100%">
+  <tr>
+  <th>Userername</th>
+    <th>name</th>
+    <th>email</th>
+	<th>password</th>
+	<th>phone number</th>
+    <th>roles</th>
+  </tr>
+{%for i in q %}
+<tr>
+<th>
+{{i.u_name}}
+</th>
+<th>
+{{i.name}}
+</th>
+<th>
+{{i.email}}
+</th>
+<th>
+{{i.pwd}}
+</th>
+<th>
+{{i.ph}}
+</th>
+<th>
+{{i.roles}}
+</th>
+</tr>
+{% endfor %}
+</table>
+</body>
+</html>

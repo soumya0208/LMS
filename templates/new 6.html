@@ -1,0 +1,29 @@
+<html>
+<body>
+
+<table style="width:100%">
+  <tr>
+  <th>teachername</th>
+    <th>coursename</th>
+    <th>coursecode</th>
+    <th>subject</th>
+  </tr>
+{%for i in q %}
+<tr>
+<th>
+{{i.name}}
+</th>
+<th>
+{{i.coursename}}
+</th>
+<th>
+{{i.coursecode}}
+</th>
+<th>
+{{i.subject}}
+</th>
+</tr>
+{% endfor %}
+</table>
+</body>
+</html>
